@@ -1,8 +1,69 @@
 .heroWrapper {
-  background-image: url('../../images/autumn.jpeg');
+  background-image: url('../../images/bleach.jpg');
   background-repeat: no-repeat;
   background-size: cover;
   background-position: center;
   height: 100vh;
-  color: var(--color-white);
+  display: flex;
+  flex-direction: column;
+  // padding: 2rem;
+  position: relative;
+  overflow: hidden;
+
+  > * {
+    position: relative;
+    z-index: 2;
+  }
+
+  h1 {
+    font-family: var(--font-serif);
+    font-weight: 700;
+    font-size: 3rem;
+    margin-bottom: .5rem;
+    padding-left: 1.5rem;
+  }
+
+  h2 {
+    font-family: var(--font-sansserif);
+    font-weight: 600;
+    font-size: 1rem;
+    text-transform: uppercase;
+    padding-left: 1.5rem;
+  }
+}
+
+.logo {
+  width: 150px;
+  height: 150px;
+
+  img {
+    max-width: 150px;
+  }
+}
+
+.shape {
+  background: var(--color-white);
+  border-radius: 50%;
+  width: 500px;
+  height: 500px;
+  position: absolute;
+  top: -200px;
+  left: -200px;
+}
+
+.buy {
+  position: absolute;
+  top: 2rem;
+  right: 2rem;
+  
+  a {
+    background-color: var(--color-white);
+    color: var(--color-purple);
+    padding: .5rem 1rem;
+    display: inline-block;
+    text-decoration: none;
+    text-transform: uppercase;
+    border-radius: 5px;
+
+  }
 }

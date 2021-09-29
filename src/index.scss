@@ -1,0 +1,61 @@
+@font-face {
+  font-family: 'Roxborough CF';
+  font-weight: 500;
+  src: url('./fonts/RoxboroughCF-Regular.woff2') format('woff2'),
+       url('./fonts/RoxboroughCF-Regular.woff') format('woff');
+}
+
+@font-face {
+  font-family: 'Roxborough CF';
+  font-weight: 700;
+  src: url('./fonts/RoxboroughCF-Heavy.woff2') format('woff2'),
+       url('./fonts/RoxboroughCF-Heavy.woff') format('woff');
+}
+
+:root {
+  --color-white: #ffffff;
+  --color-blackish: #282828;
+  --color-purple: #402961;
+
+  --font-serif: 'Roxborough CF', 'Times New Roman', serif;
+  --font-sansserif: 'Open Sans', 'Arial', sans-serif;
+}
+
+* {
+  box-sizing: border-box;
+}
+
+body {
+  margin: 0;
+  font-family: -apple-system, BlinkMacSystemFont, 'Segoe UI', 'Roboto', 'Oxygen',
+    'Ubuntu', 'Cantarell', 'Fira Sans', 'Droid Sans', 'Helvetica Neue',
+    sans-serif;
+  -webkit-font-smoothing: antialiased;
+  -moz-osx-font-smoothing: grayscale;
+  font-size: 16px;
+  color: var(--color-blackish);
+}
+
+code {
+  font-family: source-code-pro, Menlo, Monaco, Consolas, 'Courier New',
+    monospace;
+}
+
+h1,
+h2,
+h3,
+h4,
+h5 {
+  margin: 0;
+}
+
+a {
+  color: var(--color-blackish);
+  text-decoration: underline;
+  font-weight: 600;
+
+  &:focus,
+  &:hover {
+    text-decoration: none;
+  }
+}
