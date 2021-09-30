@@ -12,7 +12,7 @@ const Hero = () => (
     <h2>Vegan and cruelty free handmade soy candles and melts</h2>
 
     <nav className="buy">
-      <a href="https://www.etsy.com/uk/shop/WolfLodgeCandles">Buy on Etsy</a>
+      <a className="cta" href="https://www.etsy.com/uk/shop/WolfLodgeCandles">Shop on Etsy</a>
     </nav>
   </div>
 )
